@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+       xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation = "http://www.springframework.org/schema/beans
+  http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="movie" class="com.stackroute.domain.Movie">
+        <property name="actor" ref="Actor"/>
+        <!--<constructor-arg name="author" value="urvashi"></constructor-arg>-->
+
+
+    </bean>
+    <bean id = "Actor" class="com.stackroute.domain.Actor">
+        <property name="name" value="Aamir"/>
+        <property name="gender" value="Male"/>
+        <property name="age" value="50"/>
+    </bean>
+
+</beans>
